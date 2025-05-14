@@ -1,0 +1,17 @@
+declare upper;
+plot level1 = 570.42;
+plot level2 = 585.39;
+plot level3 = 551.42;
+plot level4 = 563.18;
+plot level5 = 607.66;
+plot level6 = 593.0;
+plot level7 = 536.7;
+plot level8 = 600.46;
+plot level9 = 523.67;
+plot level10 = 489.19;
+plot level11 = 544.05;
+plot level12 = 577.71;
+plot level13 = 505.06;
+plot level14 = 481.8;
+plot level15 = 496.48;
+plot level16 = 513.88;

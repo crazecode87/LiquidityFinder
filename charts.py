@@ -29,9 +29,11 @@ def plot_chart(cleaned_file_path: str, levels: list, title: str = None):
     # Plot
     mpf.plot(
         df,
-        type='candle',
-        style='charles',
+        type='candle',  # Alt: 'candle', 'line', 'renko', 'pnf'
+        style='nightclouds',  # Alt: 'default', 'yahoo', 'nightclouds', etc.
         title=chart_title,
         hlines=hlines,
-        volume=False
+        volume=False,  # if you want volume subplot
+        #mav=(5, 10, 20),  # Show moving averages
+        
     )

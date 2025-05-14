@@ -7,8 +7,11 @@ from cleaner import clean_ohlc_data
 from levels  import find_frequent_levels
 from charts  import plot_chart
 
+""" top_n: number of levels to find
+    threshold: minimum distance between levels to avoid clustering
+"""
 def process_file(raw_path, cleaned_folder, levels_folder,
-                 rounding=0.05, top_n=20, threshold=0.15):
+                 top_n=100, threshold=7):
     """
     CSV file processing for data export from the thinkorswim platform
     1. Clean raw CSV > cleaned_folder
@@ -27,7 +30,6 @@ def process_file(raw_path, cleaned_folder, levels_folder,
     levels_list = find_frequent_levels(
         cleaned_path,
         threshold=threshold,
-        rounding=rounding,
         top_n=top_n
     )
 
